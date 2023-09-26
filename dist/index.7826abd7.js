@@ -2958,6 +2958,7 @@ var _offersIconSvg = require("./assets/offers-icon.svg");
 var _offersIconSvgDefault = parcelHelpers.interopDefault(_offersIconSvg);
 var _cartIconSvg = require("./assets/cart-icon.svg");
 var _cartIconSvgDefault = parcelHelpers.interopDefault(_cartIconSvg);
+var _data = require("./data");
 const Header = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
         children: [
@@ -2965,14 +2966,14 @@ const Header = ()=>{
                 src: (0, _swiggyLogoSvgDefault.default)
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 13,
+                lineNumber: 15,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
                 children: "Location"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 13
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -2986,36 +2987,12 @@ const Header = ()=>{
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "App.js",
-                                    lineNumber: 17,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "",
-                                    children: "Search"
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 18,
-                                    columnNumber: 21
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "App.js",
-                            lineNumber: 17,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _offersIconSvgDefault.default),
-                                    alt: ""
-                                }, void 0, false, {
-                                    fileName: "App.js",
                                     lineNumber: 20,
                                     columnNumber: 25
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     href: "",
-                                    children: "Offers"
+                                    children: "Search"
                                 }, void 0, false, {
                                     fileName: "App.js",
                                     lineNumber: 21,
@@ -3030,7 +3007,7 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _helpIconSvgDefault.default),
+                                    src: (0, _offersIconSvgDefault.default),
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "App.js",
@@ -3039,7 +3016,7 @@ const Header = ()=>{
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     href: "",
-                                    children: "Help"
+                                    children: "Offers"
                                 }, void 0, false, {
                                     fileName: "App.js",
                                     lineNumber: 25,
@@ -3063,7 +3040,7 @@ const Header = ()=>{
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     href: "",
-                                    children: "Sign In"
+                                    children: "Help"
                                 }, void 0, false, {
                                     fileName: "App.js",
                                     lineNumber: 29,
@@ -3078,7 +3055,7 @@ const Header = ()=>{
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _cartIconSvgDefault.default),
+                                    src: (0, _helpIconSvgDefault.default),
                                     alt: ""
                                 }, void 0, false, {
                                     fileName: "App.js",
@@ -3087,7 +3064,7 @@ const Header = ()=>{
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
                                     href: "",
-                                    children: "Cart"
+                                    children: "Sign In"
                                 }, void 0, false, {
                                     fileName: "App.js",
                                     lineNumber: 33,
@@ -3098,47 +3075,196 @@ const Header = ()=>{
                             fileName: "App.js",
                             lineNumber: 31,
                             columnNumber: 21
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                    src: (0, _cartIconSvgDefault.default),
+                                    alt: ""
+                                }, void 0, false, {
+                                    fileName: "App.js",
+                                    lineNumber: 36,
+                                    columnNumber: 25
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
+                                    href: "",
+                                    children: "Cart"
+                                }, void 0, false, {
+                                    fileName: "App.js",
+                                    lineNumber: 37,
+                                    columnNumber: 25
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "App.js",
+                            lineNumber: 35,
+                            columnNumber: 21
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "App.js",
-                    lineNumber: 16,
+                    lineNumber: 18,
                     columnNumber: 17
                 }, undefined)
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 13
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 12,
+        lineNumber: 14,
         columnNumber: 9
     }, undefined);
 };
 _c = Header;
+const RestaurantCard = ({ cloudinaryImageId, name, costForTwo, avgRating, cuisines })=>{
+    const imgSrc = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/";
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "restaurant-card",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "card-img",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: imgSrc + cloudinaryImageId,
+                    alt: "img"
+                }, void 0, false, {
+                    fileName: "App.js",
+                    lineNumber: 57,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 56,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                className: "card-name",
+                children: name
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 59,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: "card-price",
+                children: costForTwo
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 60,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
+                className: "card-rating",
+                children: [
+                    "⭐ ",
+                    avgRating
+                ]
+            }, void 0, true, {
+                fileName: "App.js",
+                lineNumber: 61,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                className: "card-cuisines",
+                children: cuisines.join(", ")
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 62,
+                columnNumber: 13
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 55,
+        columnNumber: 9
+    }, undefined);
+};
+_c1 = RestaurantCard;
+const RestaurantList = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "r-list",
+        children: (0, _data.cards).restaurants.map((restaurant)=>{
+            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
+                ...restaurant.info,
+                key: restaurant.info.id,
+                __source: {
+                    fileName: "App.js",
+                    lineNumber: 72,
+                    columnNumber: 21
+                },
+                __self: undefined
+            });
+        })
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 69,
+        columnNumber: 9
+    }, undefined);
+};
+_c2 = RestaurantList;
+const Body = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantList, {}, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 83,
+        columnNumber: 12
+    }, undefined);
+};
+_c3 = Body;
+const Footer = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+            children: "Made by Ronak Raj"
+        }, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 89,
+            columnNumber: 13
+        }, undefined)
+    }, void 0, false, {
+        fileName: "App.js",
+        lineNumber: 88,
+        columnNumber: 9
+    }, undefined);
+};
+_c4 = Footer;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).StrictMode, {
-    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 44,
-        columnNumber: 9
-    }, undefined)
-}, void 0, false, {
+    children: [
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 97,
+            columnNumber: 9
+        }, undefined),
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 98,
+            columnNumber: 9
+        }, undefined),
+        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
+            fileName: "App.js",
+            lineNumber: 99,
+            columnNumber: 9
+        }, undefined)
+    ]
+}, void 0, true, {
     fileName: "App.js",
-    lineNumber: 43,
+    lineNumber: 96,
     columnNumber: 5
 }, undefined));
-var _c;
+var _c, _c1, _c2, _c3, _c4;
 $RefreshReg$(_c, "Header");
+$RefreshReg$(_c1, "RestaurantCard");
+$RefreshReg$(_c2, "RestaurantList");
+$RefreshReg$(_c3, "Body");
+$RefreshReg$(_c4, "Footer");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./assets/swiggy-logo.svg":"4f7Fa","./assets/help-icon.svg":"4VULp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./assets/search-icon.svg":"8A25i","./assets/offers-icon.svg":"lHTcF","./assets/cart-icon.svg":"972ru","./style.css":"dRy26"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./style.css":"dRy26","./assets/swiggy-logo.svg":"4f7Fa","./assets/search-icon.svg":"8A25i","./assets/help-icon.svg":"4VULp","./assets/offers-icon.svg":"lHTcF","./assets/cart-icon.svg":"972ru","./data":"5pclG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27323,7 +27449,7 @@ module.exports = require("ef03b89c8fe2794e");
     /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */ if (typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== "undefined" && typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop === "function") __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 })();
 
-},{}],"4f7Fa":[function(require,module,exports) {
+},{}],"dRy26":[function() {},{}],"4f7Fa":[function(require,module,exports) {
 module.exports = require("152a208e8a9aa9d6").getBundleURL("lly8x") + "swiggy-logo.73657f73.svg" + "?" + Date.now();
 
 },{"152a208e8a9aa9d6":"lgJ39"}],"lgJ39":[function(require,module,exports) {
@@ -27361,10 +27487,1172 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
-},{}],"4VULp":[function(require,module,exports) {
+},{}],"8A25i":[function(require,module,exports) {
+module.exports = require("ac7d626954b5b1ba").getBundleURL("lly8x") + "search-icon.91ff5f61.svg" + "?" + Date.now();
+
+},{"ac7d626954b5b1ba":"lgJ39"}],"4VULp":[function(require,module,exports) {
 module.exports = require("1031401cd16a1252").getBundleURL("lly8x") + "help-icon.5f53723a.svg" + "?" + Date.now();
 
-},{"1031401cd16a1252":"lgJ39"}],"gkKU3":[function(require,module,exports) {
+},{"1031401cd16a1252":"lgJ39"}],"lHTcF":[function(require,module,exports) {
+module.exports = require("2d15d7d0e0800ea4").getBundleURL("lly8x") + "offers-icon.6fef1385.svg" + "?" + Date.now();
+
+},{"2d15d7d0e0800ea4":"lgJ39"}],"972ru":[function(require,module,exports) {
+module.exports = require("8ed72556febda3ab").getBundleURL("lly8x") + "cart-icon.1f3296c5.svg" + "?" + Date.now();
+
+},{"8ed72556febda3ab":"lgJ39"}],"5pclG":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "cards", ()=>cards);
+const cards = {
+    restaurants: [
+        {
+            info: {
+                id: "458945",
+                name: "Fusion Restaurant",
+                cloudinaryImageId: "mygga6anstzmaacs2nqi",
+                locality: "Pipli Road",
+                areaName: "Pipli",
+                costForTwo: "₹300 for two",
+                cuisines: [
+                    "North Indian",
+                    "Chinese",
+                    "Beverages"
+                ],
+                avgRating: 4,
+                feeDetails: {
+                    restaurantId: "458945",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "85349",
+                avgRatingString: "4.0",
+                totalRatingsString: "500+",
+                sla: {
+                    deliveryTime: 26,
+                    lastMileTravel: 9.8,
+                    serviceability: "SERVICEABLE",
+                    slaString: "26 mins",
+                    lastMileTravelString: "9.8 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 22:45:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "₹125 OFF",
+                    subHeader: "ABOVE ₹249",
+                    discountTag: "FLAT DEAL"
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/fusion-restaurant-road-pipli-kurukshetra-458945",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "163418",
+                name: "Pizza Wings",
+                cloudinaryImageId: "a46a6aa00709f771fabb45c864a81b5e",
+                locality: "Sector 17",
+                areaName: "Sector 17",
+                costForTwo: "₹250 for two",
+                cuisines: [
+                    "Pizzas",
+                    "Pastas",
+                    "Fast Food"
+                ],
+                avgRating: 4,
+                feeDetails: {
+                    restaurantId: "163418",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "159048",
+                avgRatingString: "4.0",
+                totalRatingsString: "1K+",
+                sla: {
+                    deliveryTime: 24,
+                    lastMileTravel: 4.7,
+                    serviceability: "SERVICEABLE",
+                    slaString: "24 mins",
+                    lastMileTravelString: "4.7 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "60% OFF",
+                    subHeader: "UPTO ₹120"
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/pizza-wings-sector-17-kurukshetra-163418",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "249750",
+                name: "McDonald's",
+                cloudinaryImageId: "6dc3ed2ca21d71acff7c2a51dfe4c720",
+                locality: "Devine city centre",
+                areaName: "Air Colony",
+                costForTwo: "₹400 for two",
+                cuisines: [
+                    "American"
+                ],
+                avgRating: 3.9,
+                feeDetails: {
+                    restaurantId: "249750",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "630",
+                avgRatingString: "3.9",
+                totalRatingsString: "1K+",
+                sla: {
+                    deliveryTime: 23,
+                    lastMileTravel: 7.1,
+                    serviceability: "SERVICEABLE",
+                    slaString: "23 mins",
+                    lastMileTravelString: "7.1 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/mcdonalds-devine-city-centre-air-colony-kurukshetra-249750",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "148020",
+                name: "Pizza Hut",
+                cloudinaryImageId: "2b4f62d606d1b2bfba9ba9e5386fabb7",
+                locality: "Sector 17",
+                areaName: "Air Colony",
+                costForTwo: "₹350 for two",
+                cuisines: [
+                    "Pizzas"
+                ],
+                avgRating: 3.6,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "148020",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "721",
+                avgRatingString: "3.6",
+                totalRatingsString: "500+",
+                sla: {
+                    deliveryTime: 23,
+                    lastMileTravel: 4.8,
+                    serviceability: "SERVICEABLE",
+                    slaString: "23 mins",
+                    lastMileTravelString: "4.8 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {},
+            cta: {
+                link: "https://www.swiggy.com/restaurants/pizza-hut-sector-17-air-colony-kurukshetra-148020",
+                type: "WEBLINK"
+            }
+        },
+        {
+            info: {
+                id: "458945",
+                name: "Fusion Restaurant",
+                cloudinaryImageId: "mygga6anstzmaacs2nqi",
+                locality: "Pipli Road",
+                areaName: "Pipli",
+                costForTwo: "₹300 for two",
+                cuisines: [
+                    "North Indian",
+                    "Chinese",
+                    "Beverages"
+                ],
+                avgRating: 4,
+                feeDetails: {
+                    restaurantId: "458945",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "85349",
+                avgRatingString: "4.0",
+                totalRatingsString: "500+",
+                sla: {
+                    deliveryTime: 26,
+                    lastMileTravel: 9.8,
+                    serviceability: "SERVICEABLE",
+                    slaString: "26 mins",
+                    lastMileTravelString: "9.8 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 22:45:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "₹125 OFF",
+                    subHeader: "ABOVE ₹249",
+                    discountTag: "FLAT DEAL"
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/fusion-restaurant-road-pipli-kurukshetra-458945",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            info: {
+                id: "723296",
+                name: "Deluxe Restaurant",
+                cloudinaryImageId: "068721e42feaefac2e667498d82ceb27",
+                locality: "Sector 7",
+                areaName: "Air Colony",
+                costForTwo: "₹200 for two",
+                cuisines: [
+                    "North Indian",
+                    "Chinese",
+                    "Biryani",
+                    "Healthy Food",
+                    "Beverages",
+                    "Desserts"
+                ],
+                avgRating: 3.4,
+                feeDetails: {
+                    restaurantId: "723296",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "70705",
+                avgRatingString: "3.4",
+                totalRatingsString: "10+",
+                sla: {
+                    deliveryTime: 27,
+                    lastMileTravel: 8.1,
+                    serviceability: "SERVICEABLE",
+                    slaString: "27 mins",
+                    lastMileTravelString: "8.1 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "30% OFF",
+                    subHeader: "UPTO ₹75"
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                isNewlyOnboarded: true,
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/deluxe-restaurant-sector-7-air-colony-kurukshetra-723296",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            info: {
+                id: "387994",
+                name: "Pyramid",
+                cloudinaryImageId: "fbu6xuireqgzuip9o5xn",
+                locality: "Ladwa Road",
+                areaName: "Air Colony",
+                costForTwo: "₹500 for two",
+                cuisines: [
+                    "Indian",
+                    "Chinese"
+                ],
+                avgRating: 4.1,
+                feeDetails: {
+                    restaurantId: "387994",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 5100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 5100
+                },
+                parentId: "9044",
+                avgRatingString: "4.1",
+                totalRatingsString: "100+",
+                sla: {
+                    deliveryTime: 34,
+                    lastMileTravel: 12.5,
+                    serviceability: "SERVICEABLE",
+                    slaString: "34 mins",
+                    lastMileTravelString: "12.5 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "20% OFF",
+                    subHeader: "UPTO ₹50"
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/pyramid-ladwa-road-air-colony-kurukshetra-387994",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            info: {
+                id: "713986",
+                name: "The Waffle Co.",
+                cloudinaryImageId: "4866e080f03ed46d77faa197b224deba",
+                locality: "Sector 17",
+                areaName: "Air Colony",
+                costForTwo: "₹250 for two",
+                cuisines: [
+                    "Ice Cream",
+                    "Desserts",
+                    "Beverages"
+                ],
+                avgRating: 3,
+                veg: true,
+                feeDetails: {
+                    restaurantId: "713986",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "5143",
+                avgRatingString: "3.0",
+                totalRatingsString: "20+",
+                sla: {
+                    deliveryTime: 21,
+                    lastMileTravel: 4.7,
+                    serviceability: "SERVICEABLE",
+                    slaString: "21 mins",
+                    lastMileTravelString: "4.7 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1695133679/badges/Pure_Veg111.png",
+                            description: "pureveg"
+                        }
+                    ]
+                },
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "pureveg",
+                                        imageId: "v1695133679/badges/Pure_Veg111.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                isNewlyOnboarded: true,
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/the-waffle-co-sector-17-air-colony-kurukshetra-713986",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            info: {
+                id: "163418",
+                name: "Pizza Wings",
+                cloudinaryImageId: "a46a6aa00709f771fabb45c864a81b5e",
+                locality: "Sector 17",
+                areaName: "Sector 17",
+                costForTwo: "₹250 for two",
+                cuisines: [
+                    "Pizzas",
+                    "Pastas",
+                    "Fast Food"
+                ],
+                avgRating: 4,
+                feeDetails: {
+                    restaurantId: "163418",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "159048",
+                avgRatingString: "4.0",
+                totalRatingsString: "1K+",
+                sla: {
+                    deliveryTime: 24,
+                    lastMileTravel: 4.7,
+                    serviceability: "SERVICEABLE",
+                    slaString: "24 mins",
+                    lastMileTravelString: "4.7 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "60% OFF",
+                    subHeader: "UPTO ₹120"
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/pizza-wings-sector-17-kurukshetra-163418",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            info: {
+                id: "571402",
+                name: "Pizza Galleria",
+                cloudinaryImageId: "9671e24edf2666fd05315d6b210f459e",
+                locality: "Railway Road",
+                areaName: "Air Colony",
+                costForTwo: "₹350 for two",
+                cuisines: [
+                    "Pizzas",
+                    "Italian",
+                    "Mexican",
+                    "Snacks",
+                    "Burgers",
+                    "Healthy Food",
+                    "Pastas"
+                ],
+                avgRating: 3.7,
+                feeDetails: {
+                    restaurantId: "571402",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "6557",
+                avgRatingString: "3.7",
+                totalRatingsString: "100+",
+                sla: {
+                    deliveryTime: 27,
+                    lastMileTravel: 6.4,
+                    serviceability: "SERVICEABLE",
+                    slaString: "27 mins",
+                    lastMileTravelString: "6.4 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "₹125 OFF",
+                    subHeader: "ABOVE ₹249",
+                    discountTag: "FLAT DEAL"
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/pizza-galleria-railway-road-air-colony-kurukshetra-571402",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            info: {
+                id: "580477",
+                name: "Food O' Clock",
+                cloudinaryImageId: "nvprcx0bbul8a40r8phq",
+                locality: "Pipli Road",
+                areaName: "Pili Road",
+                costForTwo: "₹250 for two",
+                cuisines: [
+                    "North Indian",
+                    "Snacks",
+                    "Beverages",
+                    "Chinese"
+                ],
+                avgRating: 2.4,
+                feeDetails: {
+                    restaurantId: "580477",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "81725",
+                avgRatingString: "2.4",
+                totalRatingsString: "20+",
+                sla: {
+                    deliveryTime: 29,
+                    lastMileTravel: 9.5,
+                    serviceability: "SERVICEABLE",
+                    slaString: "29 mins",
+                    lastMileTravelString: "9.5 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 22:45:00",
+                    opened: true
+                },
+                badges: {
+                    imageBadges: [
+                        {
+                            imageId: "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png",
+                            description: "OnlyOnSwiggy"
+                        },
+                        {
+                            imageId: "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png",
+                            description: "OnlyOnSwiggy"
+                        }
+                    ]
+                },
+                isOpen: true,
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {
+                            badgeObject: [
+                                {
+                                    attributes: {
+                                        description: "OnlyOnSwiggy",
+                                        imageId: "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png"
+                                    }
+                                },
+                                {
+                                    attributes: {
+                                        description: "OnlyOnSwiggy",
+                                        imageId: "v1690360529/Ratnesh_Badges/Only_on_swiggy_badge_4x.png"
+                                    }
+                                }
+                            ]
+                        },
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                aggregatedDiscountInfoV3: {
+                    header: "₹125 OFF",
+                    subHeader: "ABOVE ₹249",
+                    discountTag: "FLAT DEAL"
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/food-o-clock-pipli-road-pili-road-kurukshetra-580477",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            info: {
+                id: "660472",
+                name: "Bikanervala",
+                cloudinaryImageId: "c1b4ddc8b67974a761f6011e3200704c",
+                locality: "KDB Road",
+                areaName: "Thanesar",
+                costForTwo: "₹400 for two",
+                cuisines: [
+                    "North Indian",
+                    "Snacks",
+                    "Chaat",
+                    "Sweets"
+                ],
+                avgRating: 3.8,
+                feeDetails: {
+                    restaurantId: "660472",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 1800
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 1800
+                },
+                parentId: "45936",
+                avgRatingString: "3.8",
+                totalRatingsString: "100+",
+                sla: {
+                    deliveryTime: 21,
+                    lastMileTravel: 4.7,
+                    serviceability: "SERVICEABLE",
+                    slaString: "21 mins",
+                    lastMileTravelString: "4.7 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/bikanervala-kdb-road-thanesar-kurukshetra-660472",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        },
+        {
+            info: {
+                id: "249750",
+                name: "McDonald's",
+                cloudinaryImageId: "6dc3ed2ca21d71acff7c2a51dfe4c720",
+                locality: "Devine city centre",
+                areaName: "Air Colony",
+                costForTwo: "₹400 for two",
+                cuisines: [
+                    "American"
+                ],
+                avgRating: 3.9,
+                feeDetails: {
+                    restaurantId: "249750",
+                    fees: [
+                        {
+                            name: "BASE_DISTANCE",
+                            fee: 2100
+                        },
+                        {
+                            name: "BASE_TIME"
+                        },
+                        {
+                            name: "ANCILLARY_SURGE_FEE"
+                        }
+                    ],
+                    totalFee: 2100
+                },
+                parentId: "630",
+                avgRatingString: "3.9",
+                totalRatingsString: "1K+",
+                sla: {
+                    deliveryTime: 23,
+                    lastMileTravel: 7.1,
+                    serviceability: "SERVICEABLE",
+                    slaString: "23 mins",
+                    lastMileTravelString: "7.1 km",
+                    iconType: "ICON_TYPE_EMPTY"
+                },
+                availability: {
+                    nextCloseTime: "2023-09-25 23:00:00",
+                    opened: true
+                },
+                badges: {},
+                isOpen: true,
+                aggregatedDiscountInfoV2: {},
+                type: "F",
+                badgesV2: {
+                    entityBadges: {
+                        imageBased: {},
+                        textBased: {},
+                        textExtendedBadges: {}
+                    }
+                },
+                orderabilityCommunication: {
+                    title: {},
+                    subTitle: {},
+                    message: {},
+                    customIcon: {}
+                },
+                differentiatedUi: {
+                    displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                    differentiatedUiMediaDetails: {
+                        mediaType: "ADS_MEDIA_ENUM_IMAGE",
+                        lottie: {},
+                        video: {}
+                    }
+                },
+                reviewsSummary: {},
+                displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+                restaurantOfferPresentationInfo: {}
+            },
+            analytics: {
+                context: "seo-data-8791bbd2-1266-4458-939a-f898139833b7"
+            },
+            cta: {
+                link: "https://www.swiggy.com/restaurants/mcdonalds-devine-city-centre-air-colony-kurukshetra-249750",
+                text: "RESTAURANT_MENU",
+                type: "WEBLINK"
+            },
+            widgetId: "collectionV5RestaurantListWidget_SimRestoRelevance_food_seo"
+        }
+    ]
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27532,15 +28820,6 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"8A25i":[function(require,module,exports) {
-module.exports = require("ac7d626954b5b1ba").getBundleURL("lly8x") + "search-icon.91ff5f61.svg" + "?" + Date.now();
-
-},{"ac7d626954b5b1ba":"lgJ39"}],"lHTcF":[function(require,module,exports) {
-module.exports = require("2d15d7d0e0800ea4").getBundleURL("lly8x") + "offers-icon.6fef1385.svg" + "?" + Date.now();
-
-},{"2d15d7d0e0800ea4":"lgJ39"}],"972ru":[function(require,module,exports) {
-module.exports = require("8ed72556febda3ab").getBundleURL("lly8x") + "cart-icon.1f3296c5.svg" + "?" + Date.now();
-
-},{"8ed72556febda3ab":"lgJ39"}],"dRy26":[function() {},{}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequirece0d")
+},{"7422ead32dcc1e6b":"786KC"}]},["cIuSe","1xC6H","2Ew96"], "2Ew96", "parcelRequirece0d")
 
 //# sourceMappingURL=index.7826abd7.js.map
