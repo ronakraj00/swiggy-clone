@@ -2958,313 +2958,38 @@ var _offersIconSvg = require("./assets/offers-icon.svg");
 var _offersIconSvgDefault = parcelHelpers.interopDefault(_offersIconSvg);
 var _cartIconSvg = require("./assets/cart-icon.svg");
 var _cartIconSvgDefault = parcelHelpers.interopDefault(_cartIconSvg);
-var _data = require("./data");
-const Header = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("header", {
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                src: (0, _swiggyLogoSvgDefault.default)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 15,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                children: "Location"
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 16,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "nav",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _searchIconSvgDefault.default),
-                                    alt: ""
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 20,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "",
-                                    children: "Search"
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 21,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "App.js",
-                            lineNumber: 19,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _offersIconSvgDefault.default),
-                                    alt: ""
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 24,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "",
-                                    children: "Offers"
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 25,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "App.js",
-                            lineNumber: 23,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _helpIconSvgDefault.default),
-                                    alt: ""
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 28,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "",
-                                    children: "Help"
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 29,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "App.js",
-                            lineNumber: 27,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _helpIconSvgDefault.default),
-                                    alt: ""
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 32,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "",
-                                    children: "Sign In"
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 33,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "App.js",
-                            lineNumber: 31,
-                            columnNumber: 21
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _cartIconSvgDefault.default),
-                                    alt: ""
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 36,
-                                    columnNumber: 25
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("a", {
-                                    href: "",
-                                    children: "Cart"
-                                }, void 0, false, {
-                                    fileName: "App.js",
-                                    lineNumber: 37,
-                                    columnNumber: 25
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "App.js",
-                            lineNumber: 35,
-                            columnNumber: 21
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "App.js",
-                    lineNumber: 18,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 17,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 14,
-        columnNumber: 9
-    }, undefined);
-};
-_c = Header;
-const RestaurantCard = ({ cloudinaryImageId, name, costForTwo, avgRating, cuisines })=>{
-    const imgSrc = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/";
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "restaurant-card",
-        children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "card-img",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                    src: imgSrc + cloudinaryImageId,
-                    alt: "img"
-                }, void 0, false, {
-                    fileName: "App.js",
-                    lineNumber: 57,
-                    columnNumber: 17
-                }, undefined)
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 56,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
-                className: "card-name",
-                children: name
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 59,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                className: "card-price",
-                children: costForTwo
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 60,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h4", {
-                className: "card-rating",
-                children: [
-                    "⭐ ",
-                    avgRating
-                ]
-            }, void 0, true, {
-                fileName: "App.js",
-                lineNumber: 61,
-                columnNumber: 13
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                className: "card-cuisines",
-                children: cuisines.join(", ")
-            }, void 0, false, {
-                fileName: "App.js",
-                lineNumber: 62,
-                columnNumber: 13
-            }, undefined)
-        ]
-    }, void 0, true, {
-        fileName: "App.js",
-        lineNumber: 55,
-        columnNumber: 9
-    }, undefined);
-};
-_c1 = RestaurantCard;
-const RestaurantList = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "r-list",
-        children: (0, _data.cards).restaurants.map((restaurant)=>{
-            return /*#__PURE__*/ (0, _react.createElement)(RestaurantCard, {
-                ...restaurant.info,
-                key: restaurant.info.id,
-                __source: {
-                    fileName: "App.js",
-                    lineNumber: 72,
-                    columnNumber: 21
-                },
-                __self: undefined
-            });
-        })
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 69,
-        columnNumber: 9
-    }, undefined);
-};
-_c2 = RestaurantList;
-const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(RestaurantList, {}, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 83,
-        columnNumber: 12
-    }, undefined);
-};
-_c3 = Body;
-const Footer = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("footer", {
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-            children: "Made by Ronak Raj"
-        }, void 0, false, {
-            fileName: "App.js",
-            lineNumber: 89,
-            columnNumber: 13
-        }, undefined)
-    }, void 0, false, {
-        fileName: "App.js",
-        lineNumber: 88,
-        columnNumber: 9
-    }, undefined);
-};
-_c4 = Footer;
+var _data = require("./src/data");
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactDefault.default).StrictMode, {
     children: [
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Header, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 97,
+            lineNumber: 24,
             columnNumber: 9
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Body, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 98,
+            lineNumber: 25,
             columnNumber: 9
         }, undefined),
         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Footer, {}, void 0, false, {
             fileName: "App.js",
-            lineNumber: 99,
+            lineNumber: 26,
             columnNumber: 9
         }, undefined)
     ]
 }, void 0, true, {
     fileName: "App.js",
-    lineNumber: 96,
+    lineNumber: 23,
     columnNumber: 5
 }, undefined));
-var _c, _c1, _c2, _c3, _c4;
-$RefreshReg$(_c, "Header");
-$RefreshReg$(_c1, "RestaurantCard");
-$RefreshReg$(_c2, "RestaurantList");
-$RefreshReg$(_c3, "Body");
-$RefreshReg$(_c4, "Footer");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./style.css":"dRy26","./assets/swiggy-logo.svg":"4f7Fa","./assets/search-icon.svg":"8A25i","./assets/help-icon.svg":"4VULp","./assets/offers-icon.svg":"lHTcF","./assets/cart-icon.svg":"972ru","./data":"5pclG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","./style.css":"dRy26","./assets/swiggy-logo.svg":"4f7Fa","./assets/search-icon.svg":"8A25i","./assets/help-icon.svg":"4VULp","./assets/offers-icon.svg":"lHTcF","./assets/cart-icon.svg":"972ru","./src/data":"9kapS","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27499,7 +27224,7 @@ module.exports = require("2d15d7d0e0800ea4").getBundleURL("lly8x") + "offers-ico
 },{"2d15d7d0e0800ea4":"lgJ39"}],"972ru":[function(require,module,exports) {
 module.exports = require("8ed72556febda3ab").getBundleURL("lly8x") + "cart-icon.1f3296c5.svg" + "?" + Date.now();
 
-},{"8ed72556febda3ab":"lgJ39"}],"5pclG":[function(require,module,exports) {
+},{"8ed72556febda3ab":"lgJ39"}],"9kapS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "cards", ()=>cards);
