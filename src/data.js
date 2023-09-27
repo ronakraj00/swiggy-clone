@@ -1,4 +1,4 @@
-export const cards={
+const cards={
     restaurants: [
         {
             info: {
@@ -1122,3 +1122,17 @@ export const cards={
         },
     ],
 };
+
+let mySet=new Set();
+
+let restaurantData=cards.restaurants.filter(r=>{
+    if(mySet.has(r.info.id)){
+        return false;
+    }
+    else{
+        mySet.add(r.info.id);
+        return true
+    }
+})
+
+export default restaurantData;

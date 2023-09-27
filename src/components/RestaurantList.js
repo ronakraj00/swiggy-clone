@@ -1,10 +1,10 @@
 import RestaurantCard from "./RestaurantCard";
 import { cards } from "../data";
 
-const RestaurantList = () => {
+const RestaurantList = ({restaurants}) => {
     return (
         <div className="r-list">
-            {cards.restaurants.map((restaurant) => {
+            {restaurants.map((restaurant) => {
                 return (
                     <RestaurantCard
                         {...restaurant.info}

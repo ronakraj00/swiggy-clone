@@ -27179,15 +27179,54 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
 var _restaurantList = require("./RestaurantList");
 var _restaurantListDefault = parcelHelpers.interopDefault(_restaurantList);
+var _data = require("../data");
+var _dataDefault = parcelHelpers.interopDefault(_data);
+var _s = $RefreshSig$();
+function filterData(value) {
+    return (0, _dataDefault.default).filter((r)=>r.info.name.toLowerCase().includes(value.toLowerCase()));
+}
 const Body = ()=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantListDefault.default), {}, void 0, false, {
-        fileName: "src/components/Body.js",
-        lineNumber: 4,
-        columnNumber: 12
-    }, undefined);
+    _s();
+    const [searchText, setSearchText] = (0, _react.useState)("");
+    const [restaurants, setRestaurants] = (0, _react.useState)((0, _dataDefault.default));
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "search-container",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "text",
+                    placeholder: "Search",
+                    value: searchText,
+                    onChange: (e)=>{
+                        setSearchText(e.target.value);
+                        let data = filterData(e.target.value);
+                        setRestaurants(data);
+                    }
+                }, void 0, false, {
+                    fileName: "src/components/Body.js",
+                    lineNumber: 17,
+                    columnNumber: 17
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 16,
+                columnNumber: 13
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _restaurantListDefault.default), {
+                restaurants: restaurants
+            }, void 0, false, {
+                fileName: "src/components/Body.js",
+                lineNumber: 30,
+                columnNumber: 13
+            }, undefined),
+            ";"
+        ]
+    }, void 0, true);
 };
+_s(Body, "HfZJ/IcuQBvQJQbDClt4Kqsy3kM=");
 _c = Body;
 exports.default = Body;
 var _c;
@@ -27198,7 +27237,7 @@ $RefreshReg$(_c, "Body");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","./RestaurantList":"3sP58","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3sP58":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","./RestaurantList":"3sP58","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react":"21dqq","../data":"9kapS"}],"3sP58":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$4eba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27212,10 +27251,10 @@ var _react = require("react");
 var _restaurantCard = require("./RestaurantCard");
 var _restaurantCardDefault = parcelHelpers.interopDefault(_restaurantCard);
 var _data = require("../data");
-const RestaurantList = ()=>{
+const RestaurantList = ({ restaurants })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "r-list",
-        children: (0, _data.cards).restaurants.map((restaurant)=>{
+        children: restaurants.map((restaurant)=>{
             return /*#__PURE__*/ (0, _react.createElement)((0, _restaurantCardDefault.default), {
                 ...restaurant.info,
                 key: restaurant.info.id,
@@ -27502,7 +27541,6 @@ function registerExportsForReactRefresh(module1) {
 },{"7422ead32dcc1e6b":"786KC"}],"9kapS":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "cards", ()=>cards);
 const cards = {
     restaurants: [
         {
@@ -28651,6 +28689,15 @@ const cards = {
         }
     ]
 };
+let mySet = new Set();
+let restaurantData = cards.restaurants.filter((r)=>{
+    if (mySet.has(r.info.id)) return false;
+    else {
+        mySet.add(r.info.id);
+        return true;
+    }
+});
+exports.default = restaurantData;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hsJbF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$bfed = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
