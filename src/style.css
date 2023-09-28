@@ -161,6 +161,71 @@ footer p {
 .search-container input:focus{
     outline: 2px solid orangered;
 }
+/* 
+<div className="restaurant-skeleton">
+            <div className="img"></div>
+            <div className="name"></div>
+            <div className="discription"></div>
+        </div> */
+
+.skeleton{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+}
+
+.restaurant-skeleton{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+}
+
+/* .restaurant-skeleton > *{
+    animation: shimmer 700ms ease-in  infinite alternate;
+} */
+
+.restaurant-skeleton .img{
+    width: 200px;
+    height: 100px;
+    background-color: #ddd;
+}
+
+.restaurant-skeleton .name{
+    height: 15px;
+    background-color: #ddd;
+}
+
+.restaurant-skeleton .discription{
+    height: 30px;
+    background-color: #ddd;
+}
+
+.shimmer{
+    position: absolute;
+    inset: 0;
+    width: 50%;
+    height: 100%;
+    background:linear-gradient(100deg,
+    rgba(255,255,255,0) 20%,
+    rgba(255,255,255,0.5) 50%,
+    rgba(255,255,255,0) 80%);;
+    animation: shimmer 2s ease-in-out infinite ;
+    z-index: 1;
+}
+
+@keyframes shimmer {
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(200%);
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .nav {
@@ -176,7 +241,7 @@ footer p {
     }
 }
 @media only screen and (max-width: 760px) {
-    .r-list {
+    .r-list,.skeleton {
         margin: 50px 10px;
     }
 }
