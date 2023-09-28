@@ -98,6 +98,11 @@ li {
     background-color: green;
     width: max-content;
     color: white;
+    font-size: 0.8rem;
+}
+
+.card-price{
+    color:gray;
     font-size: small;
 }
 
@@ -169,11 +174,11 @@ footer p {
         </div> */
 
 .skeleton{
-    margin: 50px;
+    margin: 100px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px 10px;
+    gap: 30px;
 }
 
 .restaurant-skeleton{
@@ -233,15 +238,18 @@ footer p {
     }
 
     .restaurant-card {
-        height: 220px; 
         width: 200px;     
     }
     .card-img{
+        height: 115px;
         width: 200px;
     }
 }
 @media only screen and (max-width: 760px) {
-    .r-list,.skeleton {
+    .r-list {
         margin: 50px 10px;
+    }
+    .skeleton{
+        margin: 100px 10px;   
     }
 }
