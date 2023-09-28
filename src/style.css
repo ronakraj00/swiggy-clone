@@ -71,10 +71,6 @@ li {
     cursor: pointer;
 }
 
-.restaurant-skeleton{
-
-}
-
 .restaurant-card :not(.card-img, img) {
     margin: 0px 6px;
 }
