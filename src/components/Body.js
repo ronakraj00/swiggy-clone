@@ -1,15 +1,34 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RestaurantList from "./RestaurantList";
-import restaurantData from "../data";
 
-function filterData(value){
-    return restaurantData.filter(r=>r.info.name.toLowerCase().includes(value.toLowerCase()));
+function filterData(value, restaurantData) {
+    return restaurantData.filter((r) =>
+        r.info.name.toLowerCase().includes(value.toLowerCase())
+    );
 }
 
 const Body = () => {
-
-    const [searchText,setSearchText]=useState("")
-    const [restaurants,setRestaurants]=useState(restaurantData)
+    const [searchText, setSearchText] = useState("");
+    const [restaurants, setRestaurants] = useState([]);
+    const [filterRestaurants, setFilterRestaurants] = useState([]);
+    useEffect(() => {
+        try {
+            fetch(
+                "https://www.swiggy.com/dapi/restaurants/list/v5?lat=30.7016176&lng=76.820049&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING",
+                { mode: "cors" }
+            )
+                .then((response) => response.json())
+                .then((data) => {
+                    let restaurantData =
+                        data.data.cards[1].card.card.gridElements.infoWithStyle
+                            .restaurants;
+                    setFilterRestaurants(restaurantData);
+                    setRestaurants(restaurantData);
+                });
+        } catch (error) {
+            console.log(error.message);
+        }
+    }, []);
 
     return (
         <>
@@ -18,16 +37,14 @@ const Body = () => {
                     type="text"
                     placeholder="Search"
                     value={searchText}
-                    onChange={
-                        (e) => {
-                            setSearchText(e.target.value)
-                            let data=filterData(e.target.value);
-                            setRestaurants(data);
-                        }
-                    }
+                    onChange={(e) => {
+                        setSearchText(e.target.value);
+                        let data = filterData(e.target.value, restaurants);
+                        setFilterRestaurants(data);
+                    }}
                 />
             </div>
-            <RestaurantList  restaurants={restaurants}/>;
+            <RestaurantList restaurants={filterRestaurants} />;
         </>
     );
 };

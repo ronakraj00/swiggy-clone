@@ -1,7 +1,9 @@
 import RestaurantCard from "./RestaurantCard";
-import { cards } from "../data";
 
 const RestaurantList = ({restaurants}) => {
+    console.log(typeof restaurants);
+    console.log("inside",restaurants);
+
     return (
         <div className="r-list">
             {restaurants.map((restaurant) => {

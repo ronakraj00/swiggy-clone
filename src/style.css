@@ -86,6 +86,12 @@ li {
     box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.174);
 }
 
+.card-name{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .card-rating {
     padding: 2px 4px;
     border-radius: 4px;
@@ -100,6 +106,9 @@ li {
     font-size: small;
     margin-bottom: 10px;
     padding: 4px 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .r-list {
@@ -135,7 +144,7 @@ footer p {
 .search-container {
     display: flex;
     justify-content: center;
-    margin: 20px 5px;
+    margin:20px 5px;
 }
 
 .search-container input {
@@ -159,7 +168,11 @@ footer p {
     }
 
     .restaurant-card {
-        width: 400px;
+        height: 220px; 
+        width: 200px;     
+    }
+    .card-img{
+        width: 200px;
     }
 }
 @media only screen and (max-width: 760px) {
