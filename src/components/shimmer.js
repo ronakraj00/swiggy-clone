@@ -3,9 +3,9 @@ export default function Shimmer() {
         <div className="skeleton">
             {Array(10)
                 .fill("")
-                .map((item) => {
+                .map((item,index) => {
                     return (
-                        <div className="restaurant-skeleton">
+                        <div className="restaurant-skeleton" key={index}>
                             <div className="img"></div>
                             <div className="name"></div>
                             <div className="discription"></div>
