@@ -71,6 +71,10 @@ li {
     cursor: pointer;
 }
 
+.restaurant-skeleton{
+
+}
+
 .restaurant-card :not(.card-img, img) {
     margin: 0px 6px;
 }
@@ -219,7 +223,7 @@ footer p {
     rgba(255,255,255,0) 20%,
     rgba(255,255,255,0.5) 50%,
     rgba(255,255,255,0) 80%);;
-    animation: shimmer 2s ease-in-out infinite ;
+    animation: shimmer 1s  infinite ;
     z-index: 1;
 }
 
@@ -234,6 +238,28 @@ footer p {
 
 @media only screen and (max-width: 600px) {
     .nav {
+        position: fixed;
+        bottom: 0;
+        background-color:wheat;
+        z-index: 2;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .nav ul{
+        margin: 0 0 10px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nav img{
+        width: 30px;
+    }
+
+    .nav a{
         display: none;
     }
 
@@ -244,12 +270,17 @@ footer p {
         height: 115px;
         width: 200px;
     }
-}
-@media only screen and (max-width: 760px) {
+    .restaurant-skeleton{
+        width: 160px;
+        overflow: hidden;
+    }
+
     .r-list {
         margin: 50px 10px;
     }
+
     .skeleton{
-        margin: 100px 10px;   
+        margin: 100px 0px; 
+        gap: 20px;  
     }
 }

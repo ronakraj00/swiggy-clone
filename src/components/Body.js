@@ -29,8 +29,10 @@ const Body = () => {
                 .then((response) => response.json())
                 .then((data) => {
                     let restaurantData =
-                        data.data.cards[2].card.card.gridElements.infoWithStyle
-                            .restaurants;
+                        (data?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+                            ?.restaurants)||(data?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle
+                                ?.restaurants)||(data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+                                    ?.restaurants);
                     console.log(data);
                     console.log(restaurantData);
                     setShowShimmer(false);
