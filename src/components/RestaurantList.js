@@ -9,7 +9,7 @@ const RestaurantList = ({restaurants}) => {
                         {...restaurant.info}
                         key={restaurant.info.id}
                     />
-                );
+                )
             })}
         </div>
     );
