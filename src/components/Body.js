@@ -23,8 +23,7 @@ const Body = () => {
     const [searchText, setSearchText] = useState("");
     const [restaurants, setRestaurants] = useState([]);
     const [filterRestaurants, setFilterRestaurants] = useState([]);
-
-    let [showShimmer, setShowShimmer] = useState(true);
+    const [showShimmer, setShowShimmer] = useState(true);
 
     useEffect(() => {
         fetch(

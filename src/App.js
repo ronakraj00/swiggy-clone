@@ -11,7 +11,7 @@ import SignIn from "./components/SignIn";
 import Offers from "./components/Offers";
 import Cart from "./components/Cart";
 import { Outlet } from "react-router-dom";
-
+import RestaurantPage from "./components/RestaurantPage";
 
 const App = () => {
     return (
@@ -48,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path: "/cart",
                 element: <Cart />,
+            },
+            {
+                path: "/restaurant/:id",
+                element:<RestaurantPage/>
             },
         ],
     },
