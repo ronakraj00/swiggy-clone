@@ -9,7 +9,7 @@ function filterData(value, restaurantData) {
             r.info.cuisines
                 .join(" ")
                 .toLowerCase()
-                .includes(value.toLowerCase())||((value[0]==">")?r.info.avgRating>=value.slice(1):r.info.avgRating<=value.slice(1))
+                .includes(value.toLowerCase())||((value[0]==">")?r.info.avgRating>=value.slice(1):(value[0]=="<")?r.info.avgRating<=value.slice(1):false)
     );
 }
 
