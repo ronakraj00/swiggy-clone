@@ -228,10 +228,6 @@ footer p {
     position: relative;
 }
 
-/* .restaurant-skeleton > *{
-    animation: shimmer 700ms ease-in  infinite alternate;
-} */
-
 .restaurant-skeleton .img {
     width: 200px;
     height: 100px;
@@ -261,6 +257,12 @@ footer p {
     );
     animation: shimmer 1s infinite;
     z-index: 1;
+}
+
+.no-restaurant-found{
+    text-align: center;
+    color: orangered;
+    padding: 10px;
 }
 
 @keyframes shimmer {

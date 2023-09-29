@@ -69,7 +69,11 @@ const Body = () => {
                     }}
                 />
             </div>
-            <RestaurantList restaurants={filterRestaurants} />
+            {filterRestaurants.length === 0 ? (
+                <h2 className="no-restaurant-found"> No restaurant found 😔</h2>
+            ) : (
+                <RestaurantList restaurants={filterRestaurants} />
+            )}
         </>
     );
 };
