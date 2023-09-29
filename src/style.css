@@ -33,9 +33,33 @@ header {
     gap: 150px;
 }
 
-li {
-    list-style-type: none;
+.error-page{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
+
+.error-page h5{
+    color: red;
+}
+
+.error-page button{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background: orangered;
+    cursor: pointer;
+}
+
+.error-page button a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+
 
 .nav ul {
     display: flex;
@@ -43,22 +67,17 @@ li {
     padding: 10px;
 }
 
-.nav ul li {
+/* .nav ul a {
     margin: 0 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
-}
-
-.nav ul li svg {
-    fill: #282c3f;
-}
-
-.nav ul a {
-    color: rgb(0, 0, 0);
+    cursor: pointer;
     text-decoration: none;
-}
+    color: rgb(0, 0, 0);
+} */
+
 
 .restaurant-card {
     width: 250px;
@@ -240,22 +259,17 @@ footer p {
         z-index: 2;
         width: 100%;
         display: flex;
-        justify-content: center;
-    }
-
-    .nav ul{
-        margin: 0 0 10px 0;
-        display: flex;
-        justify-content: space-between;
+        justify-content:space-around;
         align-items: center;
         gap: 10px;
     }
 
     .nav img{
+        padding: 10px;
         width: 30px;
     }
 
-    .nav a{
+    .nav h4{
         display: none;
     }
 
