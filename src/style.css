@@ -419,6 +419,12 @@ footer p {
         gap: 5px;
     }
 
+    .card-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .card-img ,.menu-img{
         width: 50%;
         height: 96%;
