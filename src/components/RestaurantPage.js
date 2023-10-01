@@ -14,6 +14,11 @@ const RestaurantPage = () => {
         showShimmer,
         error,
     ]= useRestaurantMenu();
+
+    useEffect(()=>{
+        scrollTo(0,0);
+    },[])
+
     return showShimmer ? (
         <Shimmer />
     ) : error ? (
