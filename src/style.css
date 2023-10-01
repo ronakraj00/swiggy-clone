@@ -109,6 +109,7 @@ header {
 
 .menu-img {
     height: 300px;
+    display: flex;
 }
 .menu-discription {
     height: 130px;
@@ -406,6 +407,10 @@ footer p {
         display: flex;
         flex-direction: row;
         margin: 10px;
+    }
+
+    .restaurant-menu,.restaurant-card{
+        width: 460px;
     }
 
     .restaurant-info {
