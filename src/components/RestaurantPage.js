@@ -3,6 +3,7 @@ import { IMG_CDN_URL } from "../constants";
 import Shimmer from "./shimmer";
 import ErrorPage from "./ErrorPage";
 import useRestaurantMenu from "../utils/hooks/useRestaurantMenu";
+import swiggyLogo from "../../assets/swiggy-logo.svg";
 
 const RestaurantPage = () => {
     let [
@@ -11,9 +12,12 @@ const RestaurantPage = () => {
         restaurantImg,
         restaurantCity,
         showShimmer,
+        error,
     ] = useRestaurantMenu();
     return showShimmer ? (
         <Shimmer />
+    ) : error ? (
+        <ErrorPage />
     ) : (
         <>
             <div className="about-restaurant">
@@ -40,7 +44,8 @@ const RestaurantPage = () => {
                                 <div className="menu-img">
                                     <img
                                         src={
-                                            IMG_CDN_URL + menu.card.info.imageId
+                                            (menu.card.info.imageId)?
+                                            (IMG_CDN_URL + menu.card.info.imageId):swiggyLogo
                                         }
                                         alt="menu"
                                     />

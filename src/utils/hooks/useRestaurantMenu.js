@@ -7,6 +7,7 @@ const useRestaurantMenu = () => {
     const [restaurantCity, setRestaurantCity] = useState();
     const [restaurantImg, setRestaurantImg] = useState();
     const [restaurantMenu, setRestaurantMenu] = useState([]);
+    const [error, setError] = useState(false);
     useEffect(() => {
         fetch(
             `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=30.7016176&lng=76.820049&restaurantId=${id}&catalog_qa=undefined&submitAction=ENTER`
@@ -23,10 +24,10 @@ const useRestaurantMenu = () => {
                 setRestaurantImg(
                     data?.data?.cards[0]?.card?.card?.info?.cloudinaryImageId
                 );
+            })
+            .catch(() => {
+                setError(true);
             });
-        // .catch(() => {
-        //     return <ErrorPage />;
-        // });
     }, []);
 
     return [
@@ -35,6 +36,7 @@ const useRestaurantMenu = () => {
         restaurantImg,
         restaurantCity,
         showShimmer,
+        error
     ];
 };
 
