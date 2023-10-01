@@ -73,6 +73,19 @@ header {
     color: red;
 }
 
+.nothing-to-show{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: orangered;
+}
+
+.nothing-to-show::after{
+    content: "😅";
+}
+
 .error-page button {
     border: none;
     padding: 10px;

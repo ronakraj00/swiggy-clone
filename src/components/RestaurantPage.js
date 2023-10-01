@@ -17,13 +17,13 @@ const RestaurantPage = () => {
         )
             .then((respones) => respones.json())
             .then((data) => {
-                console.log(
-                    "data",
-                    data.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2]
-                        .card.card.itemCards
-                );
+                // console.log(
+                //     "data",
+                //     data.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[2]
+                //         .card.card.itemCards
+                // );
                 setShowShimmer(false);
-                console.log(data?.data?.cards[0]?.card?.card.info.name);
+                // console.log(data?.data?.cards[0]?.card?.card.info.name);
                 setRestaurantName(data?.data?.cards[0]?.card?.card?.info?.name),
                     setRestaurantCity(
                         data?.data?.cards[0]?.card?.card?.info?.city
@@ -56,8 +56,9 @@ const RestaurantPage = () => {
                     </h4>
                 </div>
             </div>
+            {!restaurantData?<h2 className="nothing-to-show">Nothing To Show</h2>:
             <div className="menu">
-                {restaurantData.map((menu) => {
+                {restaurantData?.map((menu) => {
                     return (
                         <div
                             className="restaurant-menu"
@@ -67,7 +68,7 @@ const RestaurantPage = () => {
                                 <img
                                     src={IMG_CDN_URL + menu.card.info.imageId}
                                     alt="menu"
-                                />
+                                    />
                             </div>
                             <div className="menu-discription">
                                 <h3 className="menu-name">
@@ -86,6 +87,7 @@ const RestaurantPage = () => {
                     );
                 })}
             </div>
+            }
         </>
     );
 };
