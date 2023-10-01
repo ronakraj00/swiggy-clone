@@ -12,9 +12,9 @@ const Header = () => {
 
     return (
         <header>
+            <div className="online-status">{online ? "💚" : "💘"}</div>
             <a href="/">
                 <img src={swiggyLogo} />
-                <div className="online-status">{online ? "💚" : "💘"}</div>
             </a>
             <h4 className="location">Location</h4>
             <div className="nav">
