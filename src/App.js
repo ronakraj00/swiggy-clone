@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense, startTransition } from "react";
 import ReactDOM from "react-dom/client";
 import "./style.css";
 import Body from "./components/Body";
@@ -6,12 +6,14 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./components/ErrorPage";
-import Help from "./components/Help";
-import SignIn from "./components/SignIn";
-import Offers from "./components/Offers";
-import Cart from "./components/Cart";
 import { Outlet } from "react-router-dom";
 import RestaurantPage from "./components/RestaurantPage";
+import { lazy } from "react";
+
+const Help = lazy(() => import("./components/Help.js"));
+const SignIn = lazy(() => import("./components/SignIn.js"));
+const Offers = lazy(() => import("./components/Offers.js"));
+const Cart = lazy(() => import("./components/Cart.js"));
 
 const App = () => {
     return (
@@ -35,23 +37,47 @@ const router = createBrowserRouter([
             },
             {
                 path: "/offers",
-                element: <Offers />,
+                element: (
+                    <Suspense
+                        fallback={<h2 className="loading">Loading...</h2>}
+                    >
+                        <Offers />
+                    </Suspense>
+                ),
             },
             {
                 path: "/help",
-                element: <Help />,
+                element: (
+                    <Suspense
+                        fallback={<h2 className="loading">Loading...</h2>}
+                    >
+                        <Help />
+                    </Suspense>
+                ),
             },
             {
                 path: "/signin",
-                element: <SignIn />,
+                element: (
+                    <Suspense
+                        fallback={<h2 className="loading">Loading...</h2>}
+                    >
+                        <SignIn />
+                    </Suspense>
+                ),
             },
             {
                 path: "/cart",
-                element: <Cart />,
+                element: (
+                    <Suspense
+                        fallback={<h2 className="loading">Loading...</h2>}
+                    >
+                        <Cart />
+                    </Suspense>
+                ),
             },
             {
                 path: "/restaurant/:id",
-                element:<RestaurantPage/>
+                element: <RestaurantPage />,
             },
         ],
     },

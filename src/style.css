@@ -13,6 +13,15 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.loading{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: orangered;
+    padding: 50px 0;
+}
+
 .online-status {
     width: 30px;
     height: 30px;
