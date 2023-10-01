@@ -19,8 +19,8 @@ html {
     text-decoration: none;
     position: absolute;
     inset: 0;
-    top: 0;
-    left: 0;
+    top: 25px;
+    left: 10px;
 }
 
 body {
