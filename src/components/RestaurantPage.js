@@ -56,26 +56,26 @@ const Menu = ({ restaurantData }) => {
         <div className="menu">
             {restaurantData?.map((menu) => {
                 return (
-                    <div className="restaurant-menu" key={menu.card.info.id}>
+                    <div className="restaurant-menu" key={menu?.card?.info?.id}>
                         <div className="menu-img">
                             <img
                                 src={
-                                    menu.card.info.imageId
-                                        ? IMG_CDN_URL + menu.card.info.imageId
+                                    menu?.card?.info?.imageId
+                                        ? IMG_CDN_URL + menu?.card?.info?.imageId
                                         : swiggyLogo
                                 }
                                 alt="menu"
                             />
                         </div>
                         <div className="menu-discription">
-                            <h3 className="menu-name">{menu.card.info.name}</h3>
-                            {menu.card.info.defaultPrice ? (
+                            <h3 className="menu-name">{menu?.card?.info?.name}</h3>
+                            {menu?.card?.info?.defaultPrice ? (
                                 <h3 className="menu-rating">
-                                    {"₹" + menu.card.info.defaultPrice / 100}
+                                    {"₹" + menu?.card?.info?.defaultPrice / 100}
                                 </h3>
                             ) : null}
 
-                            <p>{menu.card.info.description}</p>
+                            <p>{menu?.card?.info?.description}</p>
                         </div>
                     </div>
                 );
