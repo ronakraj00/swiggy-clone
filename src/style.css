@@ -13,6 +13,14 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+.online-status{
+    text-decoration: none;
+    position:absolute;
+    inset: 0;
+    top: 0;
+    left: 0;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
