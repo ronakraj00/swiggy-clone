@@ -409,8 +409,8 @@ footer p {
         margin: 10px;
     }
 
-    .restaurant-menu,.restaurant-card{
-        width: 460px;
+    .restaurant-menu{
+        width: 90%;
     }
 
     .restaurant-info {
@@ -447,6 +447,10 @@ footer p {
 
     .r-list{
         row-gap: 0px;
+    }
+
+    .r-list a{
+        width: 99%;
     }
 
     .menu{
