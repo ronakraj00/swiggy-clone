@@ -12,12 +12,12 @@ const Header = () => {
 
     return (
         <header className="box-border flex justify-between p-5 shadow-md">
-            <div className="absolute top-7 left-2">{online ? "💚" : "💘"}</div>
+            <div className="absolute top-8 left-2">{online ? "💚" : "💘"}</div>
             <a href="/" className="mx-10">
                 <img src={swiggyLogo} />
             </a>
             <h4 className="text-gray-900 font-bold font-mono py-2">Location</h4>
-            <div className="  box-border py-2 px-7 fixed left-0 bottom-0 flex justify-between items-center bg-white max-sm:w-full lg:static w-1/2">
+            <div className="z-10 box-border py-2 px-7 fixed left-0 bottom-0 flex justify-between items-center bg-white max-sm:w-full lg:static w-1/2">
                 <Link to={"/search"}>
                     <img src={searchIcon} className="w-8 py-1"/>
                     <h4 className="hidden">Search</h4>
