@@ -30,8 +30,10 @@ const Body = () => {
         <Shimmer />
     ) : (
         <>
-            <div className="search-container">
+            <div className="w-full flex justify-center p-3 my-3">
                 <input
+
+                    className="sticky top-0 rounded-lg w-5/6 h-9 text-center shadow-lg focus:border-2 border-orange-500 outline-none"
                     type="text"
                     placeholder="Search"
                     value={searchText}
@@ -43,7 +45,7 @@ const Body = () => {
                 />
             </div>
             {filterRestaurants?.length === 0 ? (
-                <h2 className="no-restaurant-found"> No restaurant found 😔</h2>
+                <h2 className="text-orange-500 text-center text-lg "> No restaurant found 😔</h2>
             ) : (
                 <RestaurantList restaurants={filterRestaurants} />
             )}
