@@ -29,7 +29,7 @@ const Body = () => {
     return showShimmer ? (
         <Shimmer />
     ) : (
-        <>
+        <main className="mb-10">
             <div className="w-full flex justify-center p-3 my-3">
                 <input
 
@@ -49,7 +49,8 @@ const Body = () => {
             ) : (
                 <RestaurantList restaurants={filterRestaurants} />
             )}
-        </>
+            <h2 className="my-4 text-center text-orange-500"> End Of List 😋</h2>
+        </main>
     );
 };
 
