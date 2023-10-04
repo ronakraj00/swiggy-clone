@@ -4,7 +4,9 @@ import Shimmer from "./shimmer";
 import ErrorPage from "./ErrorPage";
 import useRestaurantMenu from "../utils/hooks/useRestaurantMenu";
 import swiggyLogo from "../../assets/swiggy-logo.svg";
-
+import { useDispatch } from "react-redux";
+import { addToCart } from "../utils/cartSlice";
+import RestaurantMenu from "./RestaurantMenu";
 const RestaurantPage = () => {
     let [
         restaurantData,
@@ -13,11 +15,11 @@ const RestaurantPage = () => {
         restaurantCity,
         showShimmer,
         error,
-    ]= useRestaurantMenu();
+    ] = useRestaurantMenu();
 
-    useEffect(()=>{
-        scrollTo(0,0);
-    },[])
+    useEffect(() => {
+        scrollTo(0, 0);
+    }, []);
 
     return showShimmer ? (
         <Shimmer />
@@ -52,32 +54,12 @@ const AboutRestaurant = ({ restaurantName, restaurantImg, restaurantCity }) => {
 };
 
 const Menu = ({ restaurantData }) => {
+
     return (
         <div className="menu">
             {restaurantData?.map((menu) => {
                 return (
-                    <div className="restaurant-menu" key={menu?.card?.info?.id}>
-                        <div className="menu-img">
-                            <img
-                                src={
-                                    menu?.card?.info?.imageId
-                                        ? IMG_CDN_URL + menu?.card?.info?.imageId
-                                        : swiggyLogo
-                                }
-                                alt="menu"
-                            />
-                        </div>
-                        <div className="menu-discription">
-                            <h3 className="menu-name">{menu?.card?.info?.name}</h3>
-                            {menu?.card?.info?.defaultPrice ? (
-                                <h3 className="menu-rating">
-                                    {"₹" + menu?.card?.info?.defaultPrice / 100}
-                                </h3>
-                            ) : null}
-
-                            <p>{menu?.card?.info?.description}</p>
-                        </div>
-                    </div>
+                    <RestaurantMenu menu={menu?.card?.info} key={menu?.card?.info?.id} calledBy={"RestaurantPage"}/>
                 );
             })}
         </div>

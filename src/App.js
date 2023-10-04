@@ -9,7 +9,8 @@ import ErrorPage from "./components/ErrorPage";
 import { Outlet } from "react-router-dom";
 import RestaurantPage from "./components/RestaurantPage";
 import { lazy } from "react";
-
+import store from "./utils/store";
+import { Provider } from "react-redux";
 const Help = lazy(() => import("./components/Help.js"));
 const SignIn = lazy(() => import("./components/SignIn.js"));
 const Offers = lazy(() => import("./components/Offers.js"));
@@ -18,9 +19,11 @@ const Cart = lazy(() => import("./components/Cart.js"));
 const App = () => {
     return (
         <>
-            <Header />
-            <Outlet />
-            <Footer />
+            <Provider store={store}>
+                <Header />
+                <Outlet />
+                <Footer />
+            </Provider>
         </>
     );
 };

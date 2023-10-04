@@ -6,9 +6,12 @@ import offersIcon from "../../assets/offers-icon.svg";
 import cartIcon from "../../assets/cart-icon.svg";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/hooks/useOnlineStatus";
+import { useSelector } from "react-redux";
 
 const Header = () => {
     let online = useOnlineStatus();
+
+    let noOfCartItems = useSelector((store) => store.cart.items);
 
     return (
         <header>
@@ -37,6 +40,13 @@ const Header = () => {
                 <Link to={"/cart"}>
                     <img src={cartIcon} alt="" />
                     <h4 href="">Cart</h4>
+                    <p
+                        style={{
+                            color: "orangered",
+                        }}
+                    >
+                        {noOfCartItems.length}
+                    </p>
                 </Link>
             </div>
         </header>

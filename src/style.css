@@ -13,7 +13,7 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.loading{
+.loading {
     text-align: center;
     display: flex;
     justify-content: center;
@@ -129,6 +129,7 @@ header {
 }
 
 .restaurant-menu {
+    position: relative;
     height: 280px;
     width: 250px;
     overflow: hidden;
@@ -136,7 +137,11 @@ header {
     display: flex;
     flex-direction: column;
     gap: 6px;
-    cursor: pointer;
+}
+
+.its-empty{
+    text-align: center;
+    padding: 10px;
 }
 
 .menu-img {
@@ -249,8 +254,50 @@ header {
     animation: card-hover 200ms ease-in-out forwards;
 }
 
-.restaurant-menu:hover {
+/* .restaurant-menu:hover {
     animation: card-hover 200ms ease-in-out forwards;
+} */
+
+.heading{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background: rgb(255, 166, 0);
+    color: white;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+}
+
+.heading button{
+    border: none;
+    background:orangered;
+    color: white;
+    padding: 6px;
+    font-size: larger;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 2px 2px  red;
+}
+
+.heading button:hover{
+    background-color:red;
+    box-shadow: none;
+}
+
+.add-to-cart {
+    cursor: pointer;
+    background: rgb(254, 89, 29);
+    border: none;
+    height: 30px;
+    border-radius: 7px;
+    color: white;
+    font-size: large;
+}
+
+.add-to-cart:active{
+    background-color: orange;
+    transform: scale(0.96);
 }
 
 @keyframes card-hover {
