@@ -76,6 +76,7 @@ const Menu = ({ restaurantData }) => {
                             ) : null}
 
                             <p>{menu?.card?.info?.description}</p>
+                            <button className="add-to-cart">Add To Cart</button>
                         </div>
                     </div>
                 );

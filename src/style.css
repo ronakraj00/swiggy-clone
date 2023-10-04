@@ -129,6 +129,7 @@ header {
 }
 
 .restaurant-menu {
+    position: relative;
     height: 280px;
     width: 250px;
     overflow: hidden;
@@ -251,6 +252,16 @@ header {
 
 .restaurant-menu:hover {
     animation: card-hover 200ms ease-in-out forwards;
+}
+
+.add-to-cart{
+    cursor: pointer;
+    background: rgb(254, 89, 29);
+    border: none;
+    height: 30px;
+    border-radius: 7px;
+    color: white;
+    font-size: large;
 }
 
 @keyframes card-hover {
